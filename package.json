@@ -4,7 +4,22 @@
   "description": "My LeetCode Algorithms Practice",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint '**/*.js'",
+    "lint:fix": "eslint '**/*.js' --fix",
+    "lint:fixstaged": "eslint --fix",
+    "postlint": "echo lint valid",
+    "init": "npm i",
+    "test": "jest --coverage"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:fixstaged"
+    ]
   },
   "repository": {
     "type": "git",
@@ -20,5 +35,19 @@
   "bugs": {
     "url": "https://github.com/rashidrazak/leetcode-algorithms-practice/issues"
   },
-  "homepage": "https://github.com/rashidrazak/leetcode-algorithms-practice#readme"
+  "homepage": "https://github.com/rashidrazak/leetcode-algorithms-practice#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serve-index": "^1.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.0",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-jsdoc": "^30.7.3",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-sort": "^1.5.0",
+    "jest": "^26.6.1",
+    "lint-staged": "^10.4.2",
+    "prettier": "^2.1.2"
+  }
 }
