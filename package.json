@@ -1,0 +1,24 @@
+{
+  "name": "leetcode-algorithms-practice",
+  "version": "1.0.0",
+  "description": "My LeetCode Algorithms Practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rashidrazak/leetcode-algorithms-practice.git"
+  },
+  "keywords": [
+    "leetcode",
+    "algorithms",
+    "javascript"
+  ],
+  "author": "Rashid Razak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rashidrazak/leetcode-algorithms-practice/issues"
+  },
+  "homepage": "https://github.com/rashidrazak/leetcode-algorithms-practice#readme"
+}
