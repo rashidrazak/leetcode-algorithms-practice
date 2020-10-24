@@ -1,1 +1,1 @@
-LeetCode Algorithms Practice using JavaScript
+# LeetCode Algorithms Practice using JavaScript
